@@ -1,0 +1,41 @@
+[debug] [2024-07-03T03:05:12.803Z] ----------------------------------------------------------------------
+[debug] [2024-07-03T03:05:12.811Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\WS03\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-07-03T03:05:12.812Z] CLI Version:   13.13.0
+[debug] [2024-07-03T03:05:12.812Z] Platform:      win32
+[debug] [2024-07-03T03:05:12.813Z] Node Version:  v20.10.0
+[debug] [2024-07-03T03:05:12.814Z] Time:          Wed Jul 03 2024 04:05:12 GMT+0100 (West Africa Standard Time)
+[debug] [2024-07-03T03:05:12.815Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-03T03:05:13.065Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-03T03:05:13.067Z] > authorizing via signed-in user (swahab947@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\WS03
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-03T03:05:16.630Z] Using project from CLI flag: webap-d02df
+[debug] [2024-07-03T03:05:16.642Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webap-d02df [none]
+[debug] [2024-07-03T03:05:29.631Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/webap-d02df, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/webap-d02df failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-07-03T03:05:29.632Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/webap-d02df (original: request to https://firebase.googleapis.com/v1beta1/projects/webap-d02df failed, reason: Client network socket disconnected before secure TLS connection was established)
+[debug] [2024-07-03T03:05:30.193Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/webap-d02df
+    at RetryOperation._fn (C:\Users\WS03\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project webap-d02df. Please make sure the project exists and your account has permission to access it.
